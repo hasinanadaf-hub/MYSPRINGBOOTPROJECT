@@ -1,0 +1,313 @@
+/* =========================
+   GLOBAL
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+
+/* =========================
+   HOME
+========================= */
+
+.Home {
+  min-height: calc(100vh - 70px);
+
+  display: flex;
+  justify-content: center;
+
+  padding: 20px;
+
+  background: linear-gradient(
+    135deg,
+    #4c1d95,
+    #7c3aed,
+    #8b5cf6,
+    #3b82f6,
+    #10b981
+  );
+}
+
+
+/* =========================
+   HOME CONTAINER
+========================= */
+
+.Home-container {
+  width: 900px;
+  max-width: 100%;
+
+  min-height: 650px;
+
+  text-align: center;
+
+  padding: 10px 30px 50px;
+
+  background: rgba(124, 58, 237, 0.35);
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.20);
+
+  backdrop-filter: blur(4px);
+}
+
+
+/* =========================
+   MAIN TITLE
+========================= */
+
+.main-title {
+  color: white;
+
+  font-size: 22px;
+
+  font-weight: 700;
+
+  margin-bottom: 5px;
+}
+
+
+/* =========================
+   SUB TITLE
+========================= */
+
+.Home-container h3 {
+  color: white;
+
+  font-size: 21px;
+
+  font-weight: 600;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.description {
+  color: white;
+
+  max-width: 700px;
+
+  margin: 0 auto 30px;
+
+  font-size: 14px;
+
+  line-height: 1.8;
+}
+
+
+/* =========================
+   FEATURES
+========================= */
+
+.features {
+  display: flex;
+
+  justify-content: center;
+
+  align-items: flex-start;
+
+  flex-wrap: wrap;
+
+  gap: 25px;
+
+  max-width: 700px;
+
+  margin: 0 auto 35px;
+}
+
+
+/* =========================
+   FEATURE CARD
+========================= */
+
+.feature-card {
+  width: 210px;
+
+  min-height: 175px;
+
+  padding: 25px 18px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  justify-content: center;
+
+  align-items: center;
+
+  text-align: center;
+
+  background: white;
+
+  border-radius: 15px;
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.20);
+
+  transition: 0.3s ease;
+}
+
+
+/* =========================
+   CARD HOVER
+========================= */
+
+.feature-card:hover {
+  transform: translateY(-8px);
+
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================
+   CARD HEADING
+========================= */
+
+.feature-card h2 {
+  color: #6d28d9;
+
+  font-size: 18px;
+
+  line-height: 1.3;
+
+  margin-bottom: 15px;
+}
+
+
+/* =========================
+   CARD PARAGRAPH
+========================= */
+
+.feature-card p {
+  color: #444;
+
+  font-size: 12px;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   DOCTOR CARD
+========================= */
+
+.doctor-card {
+  background: linear-gradient(
+    135deg,
+    #6366f1,
+    #10b981
+  );
+}
+
+.doctor-card h2 {
+  color: white;
+}
+
+.doctor-card p {
+  color: white;
+}
+
+
+/* =========================
+   HOME BUTTON
+========================= */
+
+.home-btn {
+  border: none;
+
+  padding: 12px 30px;
+
+  border-radius: 25px;
+
+  background: white;
+
+  color: #6d28d9;
+
+  font-size: 14px;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+
+  transition: 0.3s ease;
+}
+
+
+/* =========================
+   BUTTON HOVER
+========================= */
+
+.home-btn:hover {
+  background: #a7f3d0;
+
+  color: #4c1d95;
+
+  transform: translateY(-3px);
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.30);
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .Home {
+    padding: 15px;
+  }
+
+  .Home-container {
+    padding: 20px 15px 40px;
+  }
+
+  .main-title {
+    font-size: 20px;
+  }
+
+  .Home-container h3 {
+    font-size: 18px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .feature-card {
+    width: 220px;
+  }
+}
+
+
+@media (max-width: 500px) {
+
+  .Home-container {
+    padding: 15px 10px 35px;
+  }
+
+  .main-title {
+    font-size: 18px;
+  }
+
+  .Home-container h3 {
+    font-size: 16px;
+  }
+
+  .feature-card {
+    width: 100%;
+
+    max-width: 280px;
+  }
+}
